@@ -1,0 +1,48 @@
+{
+  "name": "@hapi/eslint-plugin",
+  "version": "7.0.0",
+  "description": "ESLint plugin containing hapi style guide rules and config",
+  "main": "lib/index.js",
+  "repository": "https://github.com/hapijs/eslint-plugin.git",
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "lint",
+    "eslint",
+    "eslintplugin",
+    "eslintconfig",
+    "hapi"
+  ],
+  "peerDependencies": {
+    "@babel/core": "^7.24.9",
+    "@babel/eslint-parser": "^7.25.0"
+  },
+  "peerDependenciesMeta": {
+    "@babel/core": {
+      "optional": true
+    },
+    "@babel/eslint-parser": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "globals": "^15.11.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.9",
+    "@babel/eslint-parser": "^7.25.0",
+    "@hapi/code": "^9.0.3",
+    "@hapi/eslint-plugin": "file:.",
+    "@hapi/lab": "^25.3.0",
+    "@types/eslint": "^9.6.0",
+    "eslint": "^9.8.0"
+  },
+  "scripts": {
+    "test": "lab -a @hapi/code -L"
+  },
+  "license": "BSD-3-Clause"
+}

@@ -1,0 +1,50 @@
+{
+  "name": "mo-walk",
+  "version": "1.2.0",
+  "description": "walk directory for esm and cjs modules",
+  "main": "lib/index.js",
+  "engines": {
+    "node": ">=12"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "lab -a @hapi/code -t 100 -L test/index.js",
+    "coveralls": "lab -r lcov test/index.js | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devinivy/mo-walk.git"
+  },
+  "keywords": [
+    "directory",
+    "walk",
+    "visit",
+    "module",
+    "esm",
+    "utility",
+    "import",
+    "require"
+  ],
+  "author": "Devin Ivy <devin@bigroomstudios.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devinivy/mo-walk/issues"
+  },
+  "homepage": "https://github.com/devinivy/mo-walk#readme",
+  "devDependencies": {
+    "@hapi/code": "8.x.x",
+    "@hapi/eslint-plugin": "*",
+    "@hapi/lab": "24.x.x",
+    "coveralls": "3.x.x"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:@hapi/module"
+    ]
+  },
+  "dependencies": {
+    "pkg-up": "3.x.x"
+  }
+}
